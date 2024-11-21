@@ -1,19 +1,20 @@
-# Kaspium - a non-custodial wallet for Kaspa blockDAG
+# Hoosat Mobile
 
-## What is Kaspium?
+Hoosat Mobile is a non-custodial wallet for the [Hoosat Network](https://network.hoosat.fi/)
+BlockDAG, available for Android and iOS. It is written in
+[Dart](https://dart.dev) using [Flutter](https://flutter.dev).
 
-Kaspium is a non-custodial wallet for Kaspa, available for Android and iOS. It is written in [Dart](https://dart.dev) using [Flutter](https://flutter.dev).
-
-| Link | Description |
-| :----- | :------ |
-[kaspium.io](https://kaspium.io) | Kaspium Homepage
-[kaspa.org](https://kaspa.org) | Kaspa Blockchain Homepage
+| Link                                                     | Description              |
+|:---------------------------------------------------------|:-------------------------|
+| [hoosat.fi](https://network.hoosat.fi/)          | Hoosat Network Homepage |
 
 ## Contributing
 
-* Fork the repository and clone it to your local machine
-* Follow the instructions [here](https://flutter.io/docs/get-started/install) to install the Flutter SDK
-* Setup [Android Studio](https://flutter.io/docs/development/tools/android-studio) or [Visual Studio Code](https://flutter.io/docs/development/tools/vs-code).
+* Fork the repository and clone it to your local machine.
+* Follow the instructions [here](https://flutter.io/docs/get-started/install)
+  to install the Flutter SDK
+* Setup [Android Studio](https://flutter.io/docs/development/tools/android-studio)
+  or [Visual Studio Code](https://flutter.io/docs/development/tools/vs-code)
 
 ## Building
 
@@ -43,10 +44,8 @@ flutter run --release
 
 For some details regarding translations, have a look at [Translations and translators](./TRANSLATORS.md).
 
-## Have a question?
+## Screenshots
 
-If you need any help, feel free to [file a feature request or an issue](https://github.com/azbuky/kaspium_wallet/issues/new/choose) if you do not manage to find a solution.
-
-## License
-
-Kaspium is released under the MIT License
+| ![](assets/images/android_1.png) | ![](assets/images/android_2.png) | ![](assets/images/android_3.png) |
+|----------------------------------|----------------------------------|----------------------------------|
+| ![](assets/images/android_4.png) | ![](assets/images/android_5.png) | ![](assets/images/android_6.png) |
