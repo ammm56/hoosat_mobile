@@ -189,13 +189,14 @@ class SendConfirmSheet extends HookConsumerWidget {
     }
 
     Future<void> onConfirm() async {
+      // print('onConfirm send');
       final symbol = ref.read(kasSymbolProvider);
       final insufficientBalance = checkInsufficientBalance();
       if (insufficientBalance) {
         AppDialogs.showInfoDialog(
           context,
           l10n.insufficientBalance,
-          l10n.insufficientBalanceDetails.replaceAll('KAS', symbol),
+          l10n.insufficientBalanceDetails.replaceAll('HTN', symbol),
         );
         return;
       }
@@ -216,6 +217,7 @@ class SendConfirmSheet extends HookConsumerWidget {
       final walletAuth = ref.read(walletAuthProvider.notifier);
       final authUtil = ref.read(authUtilProvider);
       bool auth = false;
+      // print('walletAuth.needsPasswordAuth: ${walletAuth.needsPasswordAuth}');
       if (walletAuth.needsPasswordAuth) {
         auth = await authUtil.authenticateWithPassword(
           context,
@@ -225,6 +227,7 @@ class SendConfirmSheet extends HookConsumerWidget {
         final message = authMessage();
         auth = await authUtil.authenticate(context, message, message);
       }
+      // print('auth: $auth');
       if (auth) {
         await sendTransaction();
       }

@@ -91,7 +91,7 @@ class MainCard extends ConsumerWidget {
                           child: Row(
                             children: [
                               Image.asset(
-                                'assets/kaspa_transparent_180.png',
+                                'assets/hoosat_transparent_180.png',
                                 width: 30,
                                 color: theme is KaspiumLightTheme
                                     ? theme.primary

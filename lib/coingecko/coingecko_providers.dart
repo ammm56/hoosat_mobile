@@ -35,7 +35,7 @@ final _kaspaPriceRemoteProvider =
 
   try {
     var price = await getCoinGeckoApiPrice(fiat);
-    // fallback to Kaspium API if CoinGecko API fails
+    // fallback to Hoosat API if CoinGecko API fails
     if (price == null) {
       price = await getKaspiumApiPrice(fiat);
     }
@@ -49,7 +49,7 @@ final _kaspaPriceRemoteProvider =
       timestamp: timestamp,
     );
   } catch (e, st) {
-    log.e('Failed to fetch KAS exchange rate', error: e, stackTrace: st);
+    log.e('Failed to fetch HTN exchange rate', error: e, stackTrace: st);
     if (cached.currency == currency.currency) {
       return cached;
     }

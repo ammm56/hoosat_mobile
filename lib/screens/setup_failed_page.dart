@@ -40,7 +40,7 @@ class SetupFailedPage extends ConsumerWidget {
                     widthFactor: 0.4,
                     child: FittedBox(
                       fit: BoxFit.fitWidth,
-                      child: Image.asset('assets/kaspa.png'),
+                      child: Image.asset('assets/hoosat.png'),
                     ),
                   ),
                   Text(

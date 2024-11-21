@@ -81,6 +81,7 @@ class KaspaClient {
 
     request.sink.add(message);
     final result = await response.first;
+    // print('result: $result');
 
     response.cancel();
     request.close();
@@ -105,6 +106,8 @@ class KaspaClient {
         addresses: addresses,
       ),
     );
+
+    print('getBalancesByAddresses message: $message');
 
     final response = await _singleRequest(message);
     final error = response.getBalancesByAddressesResponse.error;

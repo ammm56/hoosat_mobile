@@ -29,26 +29,26 @@ class BlockExplorer with _$BlockExplorer {
 
 const kKaspaExplorerMainnet = BlockExplorer(
   network: KaspaNetwork.mainnet,
-  name: 'Kaspa Explorer',
-  url: 'explorer.kaspa.org',
-  addressUrl: 'https://explorer.kaspa.org/addresses/$kParamPattern',
-  txUrl: 'https://explorer.kaspa.org/txs/$kParamPattern',
+  name: 'Hoosat Explorer',
+  url: 'explorer.hoosat.fi',
+  addressUrl: 'https://explorer.hoosat.fi/addresses/$kParamPattern',
+  txUrl: 'https://explorer.hoosat.fi/txs/$kParamPattern',
 );
 
 const kKaspaExplorerTestnet10 = BlockExplorer(
   network: KaspaNetwork.testnet,
-  name: 'Kaspa Explorer',
-  url: 'explorer-tn10.kaspa.org',
-  addressUrl: 'https://explorer-tn10.kaspa.org/addresses/$kParamPattern',
-  txUrl: 'https://explorer-tn10.kaspa.org/txs/$kParamPattern',
+  name: 'Hoosat Explorer',
+  url: 'explorer.hoosat.fi',
+  addressUrl: 'https://explorer.hoosat.fi/addresses/$kParamPattern',
+  txUrl: 'https://explorer.hoosat.fi/txs/$kParamPattern',
 );
 
 const kKaspaExplorerTestnet11 = BlockExplorer(
   network: KaspaNetwork.testnet,
-  name: 'Kaspa Explorer',
-  url: 'explorer-tn11.kaspa.org',
-  addressUrl: 'https://explorer-tn11.kaspa.org/addresses/$kParamPattern',
-  txUrl: 'https://explorer-tn11.kaspa.org/txs/$kParamPattern',
+  name: 'Hoosat Explorer',
+  url: 'explorer.hoosat.fi',
+  addressUrl: 'https://explorer.hoosat.fi/addresses/$kParamPattern',
+  txUrl: 'https://explorer.hoosat.fi/txs/$kParamPattern',
 );
 
 const kKasFyiMainnet = BlockExplorer(

@@ -9,9 +9,10 @@ part 'node_types.freezed.dart';
 part 'node_types.g.dart';
 
 const mainnetNodeConfig = NodeConfig(
-  id: '467af0cb-055c-4d32-8d29-123506c7ed6e',
-  name: 'Kaspium Official',
-  urls: ['node.kaspium.io'],
+  // id: '467af0cb-055c-4d32-8d29-123506c7ed6e',
+  id: '3dcfd8432b304450496736cb0c4c41c9',
+  name: 'Hoosat Official',
+  urls: ['node-mainnet-1.hoosat.fi'],
   isSecure: true,
   network: KaspaNetwork.mainnet,
 );

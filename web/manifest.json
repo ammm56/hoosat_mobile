@@ -1,6 +1,6 @@
 {
-    "name": "kaspa_wallet",
-    "short_name": "kaspa_wallet",
+    "name": "hoosat_mobile",
+    "short_name": "hoosat_mobile",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#004a50",

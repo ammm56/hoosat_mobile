@@ -181,7 +181,7 @@ class SetupWalletScreen extends HookConsumerWidget {
                     widthFactor: 0.4,
                     child: FittedBox(
                       fit: BoxFit.fitWidth,
-                      child: Image.asset('assets/kaspa.png'),
+                      child: Image.asset('assets/hoosat.png'),
                     ),
                   ),
                   Column(

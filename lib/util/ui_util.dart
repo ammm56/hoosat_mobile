@@ -271,6 +271,7 @@ abstract class UIUtil {
       return;
     }
 
+    // 可花费的 UTXOs 列表
     final spendableUtxos = ref.read(spendableUtxosProvider);
     final walletService = ref.read(walletServiceProvider);
     final addressNotifier = ref.read(addressNotifierProvider);
@@ -301,6 +302,8 @@ abstract class UIUtil {
         changeAddress: changeAddress.address,
         note: uri.message,
       );
+
+      // print('sendTx: $sendTx');
 
       Sheets.showAppHeightNineSheet(
         context: context,

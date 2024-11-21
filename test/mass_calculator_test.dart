@@ -15,7 +15,7 @@ void main() {
     final prevTxId =
         '880eb9819a31821d9d2399e2f35e2433b72637e393d71ecc9b8d0250f49153c3';
     final address = Address.publicKey(
-      prefix: AddressPrefix.kaspa,
+      prefix: AddressPrefix.hoosat,
       publicKey: Uint8List(32),
     );
     final tx = Transaction(

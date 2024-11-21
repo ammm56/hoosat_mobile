@@ -3,7 +3,8 @@ import 'dart:typed_data';
 
 import 'package:fixnum/fixnum.dart';
 import 'package:hex/hex.dart';
-import 'package:pointycastle/digests/blake2b.dart';
+// import 'package:pointycastle/digests/blake2b.dart';
+import '../encrypt/blake3am.dart';
 // ignore: implementation_imports
 import 'package:pointycastle/src/utils.dart' as p_utils;
 
@@ -87,14 +88,20 @@ RegExp _hexRegExp = RegExp(r'^[0-9a-fA-F]+$');
 
 bool isHex(String hex) => _hexRegExp.hasMatch(hex);
 
-Uint8List digest({required Uint8List data, int digestSize = 32}) {
-  final blake2b = Blake2bDigest(digestSize: digestSize);
-  final output = blake2b.process(data);
+// Uint8List digest({required Uint8List data, int digestSize = 32}) {
+//   final blake2b = Blake2bDigest(digestSize: digestSize);
+//   final output = blake2b.process(data);
 
-  return output;
+//   return output;
+// }
+// String hash(String data) => digest(data: stringToBytesUtf8(data)).hex;
+
+Uint8List blake3digest(Uint8List data) {
+  final output = blake3WithDefaultKey(data);
+
+  return Uint8List.fromList(output);
 }
-
-String hash(String data) => digest(data: stringToBytesUtf8(data)).hex;
+String hash(String data) => blake3digest(stringToBytesUtf8(data)).hex;
 
 // mnemonic helpers
 

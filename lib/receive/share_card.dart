@@ -106,7 +106,7 @@ class _AppShareCardState extends State<AppShareCard> {
                           Container(
                             width: 30,
                             child: Image.asset(
-                              'assets/kas_icon.png',
+                              'assets/hoosat.png',
                               width: 30,
                               height: 30,
                             ),

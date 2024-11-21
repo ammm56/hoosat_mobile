@@ -30,7 +30,7 @@ class IntroWallets extends ConsumerWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Image.asset('assets/kaspa.png', width: 80, height: 80),
+                  Image.asset('assets/hoosat.png', width: 80, height: 80),
                   Padding(
                     padding: const EdgeInsets.only(bottom: 16, top: 8),
                     child: Center(

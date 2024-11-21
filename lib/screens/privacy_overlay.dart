@@ -28,7 +28,7 @@ class PrivacyOverlay extends ConsumerWidget {
                 Flexible(
                   child: FractionallySizedBox(
                     widthFactor: 0.4,
-                    child: Image.asset('assets/kaspa.png'),
+                    child: Image.asset('assets/hoosat.png'),
                   ),
                 ),
               ],

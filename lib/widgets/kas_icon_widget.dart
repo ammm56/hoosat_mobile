@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-const kKasIconPath = 'assets/kas_icon.png';
+const kKasIconPath = 'assets/hoosat.png';
 
 class KasIconWidget extends ConsumerWidget {
   final Size size;

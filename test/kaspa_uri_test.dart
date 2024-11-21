@@ -15,7 +15,7 @@ void main() {
 
   test('Uri with different prefix', () {
     final uriStr = address;
-    final uri = KaspaUri.tryParse(uriStr, prefix: AddressPrefix.kaspaTest);
+    final uri = KaspaUri.tryParse(uriStr, prefix: AddressPrefix.hoosatTest);
 
     expect(uri, isNull);
   });

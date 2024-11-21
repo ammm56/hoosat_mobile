@@ -95,6 +95,7 @@ class WalletService {
     await _signTransaction(tx);
 
     final rpcTx = tx.toRpc();
+    // print('rpcTx: $rpcTx');
 
     if (rbf) {
       final result = await client.submitTransactionReplacement(rpcTx);
@@ -108,10 +109,13 @@ class WalletService {
   Future<void> _signTransaction(Transaction tx) async {
     final hashType = SigHashType.sigHashAll;
     final reusedValues = SighashReusedValues();
+    // print('hashType: $hashType');
+    // print('reusedValues: $reusedValues');
 
     // Sign all inputs
     for (int index = 0; index < tx.inputs.length; ++index) {
       final input = tx.inputs[index];
+      // print('input: $input');
 
       final hash = calculateSignatureHashSchnorr(
         tx: tx,
@@ -119,11 +123,15 @@ class WalletService {
         hashType: hashType,
         sighashReusedValues: reusedValues,
       );
+      // print('calculateSignatureHashSchnorr hash: $hash');
 
+      // print('input.address: ${input.address}');
       final signature = await signer.sign(hash, input.address);
+      // print('signature: $signature');
 
       final signatureScript =
           [signature.length + 1] + signature + [hashType.raw];
+      // print('signatureScript: $signatureScript');
       input.signatureScript.setAll(0, signatureScript);
     }
   }

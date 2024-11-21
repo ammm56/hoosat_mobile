@@ -1,20 +1,20 @@
 import 'bip32/bip32.dart';
 
-const String kKaspaNetworkMainnet = 'mainnet';
-const String kKaspaNetworkTestnet = 'testnet';
-const String kKaspaNetworkSimnet = 'simnet';
-const String kKaspaNetworkDevnet = 'devnet';
+const String kKaspaNetworkMainnet = 'hoosat-mainnet';
+const String kKaspaNetworkTestnet = 'hoosat-testnet';
+const String kKaspaNetworkSimnet = 'hoosat-simnet';
+const String kKaspaNetworkDevnet = 'hoosat-devnet';
 
 const String kKaspaNetworkIdMainnet = '$kKaspaNetworkMainnet';
-const String kKaspaNetworkIdTestnet10 = '$kKaspaNetworkTestnet-10';
+const String kKaspaNetworkIdTestnet10 = '$kKaspaNetworkTestnet';
 const String kKaspaNetworkIdTestnet11 = '$kKaspaNetworkTestnet-11';
 const String kKaspaNetworkIdSimnet = '$kKaspaNetworkSimnet';
 const String kKaspaNetworkIdDevnet = '$kKaspaNetworkDevnet';
 
-const int kMainnetRpcPort = 16110;
-const int kTestnetPpcPort = 16210;
-const int kSimnetRpcPort = 16510;
-const int kDevnetRpcPort = 16610;
+const int kMainnetRpcPort = 42420;
+const int kTestnetPpcPort = 42422;
+const int kSimnetRpcPort = 42424;
+const int kDevnetRpcPort = 42426;
 
 enum KaspaNetwork {
   mainnet,

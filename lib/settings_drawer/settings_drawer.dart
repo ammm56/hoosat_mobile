@@ -275,7 +275,7 @@ class _SettingsSheetState extends ConsumerState<SettingsSheet>
       }
 
       void contactSupport() =>
-          openUrl('mailto:$kSupportEmail?subject=Kaspium support');
+          openUrl('mailto:$kSupportEmail?subject=Hoosat support');
 
       void share() {
         Share.share(
@@ -440,12 +440,12 @@ class _SettingsSheetState extends ConsumerState<SettingsSheet>
                         icon: Icons.email,
                         onPressed: contactSupport,
                       ),
-                      Divider(height: 2, color: theme.text15),
-                      SingleLineItem(
-                        heading: l10n.shareKaspium,
-                        settingIcon: AppIcons.share,
-                        onPressed: share,
-                      ),
+                      // Divider(height: 2, color: theme.text15),
+                      // SingleLineItem(
+                      //   heading: l10n.shareKaspium,
+                      //   settingIcon: AppIcons.share,
+                      //   onPressed: share,
+                      // ),
                       Divider(height: 2, color: theme.text15),
                       SingleLineItem(
                         heading: l10n.logoutOrSwitchWallet,

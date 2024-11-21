@@ -83,7 +83,7 @@ class BuySheet extends ConsumerWidget {
 
       final uri = Uri.https('kaspa-topper.vercel.app', '/api/topper', {
         'source': source,
-        'target': 'KAS',
+        'target': 'HTN',
         'amount': amount?.value.toStringAsFixed(8) ?? '0',
         'address': address.encoded,
       });

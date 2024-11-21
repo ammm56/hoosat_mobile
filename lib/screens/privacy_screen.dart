@@ -21,7 +21,7 @@ class PrivacyScreen extends HookConsumerWidget {
 
     useEffect(() {
       Future.microtask(
-        () => precacheImage(AssetImage('assets/kaspa.png'), context),
+        () => precacheImage(AssetImage('assets/hoosat.png'), context),
       );
       return null;
     }, const []);
